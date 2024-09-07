@@ -4714,6 +4714,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 220.98 100.33)
@@ -4902,6 +4998,12 @@
 		(uuid "980ee0fe-3e89-40a2-96d6-172636cf7403")
 	)
 	(junction
+		(at 62.23 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ae39758-59ae-4720-93b1-4e7bbf05c9fe")
+	)
+	(junction
 		(at 72.39 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4948,6 +5050,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db67c1bd-1974-4a35-9237-e4a2eb4344ab")
+	)
+	(junction
+		(at 214.63 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1b3c013-3ab2-40ad-bc27-6a404f35e66c")
 	)
 	(junction
 		(at 54.61 128.27)
@@ -5101,6 +5209,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 81.28) (xy 66.04 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "047b5f31-adc1-446f-9f58-35611953df3c")
+	)
+	(wire
+		(pts
 			(xy 72.39 72.39) (xy 58.42 72.39)
 		)
 		(stroke
@@ -5201,6 +5319,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 66.04) (xy 214.63 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "100ff481-ca04-4928-a94e-97275b5d29cd")
+	)
+	(wire
+		(pts
 			(xy 193.04 102.87) (xy 215.9 102.87)
 		)
 		(stroke
@@ -5261,6 +5389,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 76.2) (xy 214.63 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19f17995-87e8-4dc9-91a7-49f0ab3f4383")
+	)
+	(wire
+		(pts
 			(xy 205.74 119.38) (xy 205.74 120.65)
 		)
 		(stroke
@@ -5291,7 +5429,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 77.47) (xy 171.45 77.47)
+			(xy 168.91 77.47) (xy 175.26 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5338,6 +5476,16 @@
 			(type default)
 		)
 		(uuid "21fb572a-f591-4dbe-89c7-b831d021c73c")
+	)
+	(wire
+		(pts
+			(xy 62.23 82.55) (xy 66.04 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2258528d-5517-4e68-a466-a399f7bd7aa1")
 	)
 	(wire
 		(pts
@@ -5581,7 +5729,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 77.47) (xy 171.45 72.39)
+			(xy 175.26 77.47) (xy 175.26 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5611,7 +5759,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 72.39) (xy 182.88 72.39)
+			(xy 175.26 66.04) (xy 214.63 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5708,6 +5856,26 @@
 			(type default)
 		)
 		(uuid "4719ea79-b9a9-46eb-b2d0-b9f6049ece9f")
+	)
+	(wire
+		(pts
+			(xy 41.91 134.62) (xy 38.1 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a8656f4-023a-45e3-8b9e-fe56b2587f81")
+	)
+	(wire
+		(pts
+			(xy 41.91 133.35) (xy 41.91 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bdd3864-a294-44be-ab07-96ec96c2c297")
 	)
 	(wire
 		(pts
@@ -6151,6 +6319,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 115.57) (xy 66.04 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b32e36f-897d-4d9f-b5a2-4078fe3fcecb")
+	)
+	(wire
+		(pts
 			(xy 107.95 82.55) (xy 125.73 82.55)
 		)
 		(stroke
@@ -6158,6 +6336,16 @@
 			(type default)
 		)
 		(uuid "7cd63204-11dd-45bf-920f-a088074023de")
+	)
+	(wire
+		(pts
+			(xy 38.1 132.08) (xy 34.29 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7edd58cd-a418-4b2b-8b6e-7c3d6871d493")
 	)
 	(wire
 		(pts
@@ -6178,6 +6366,16 @@
 			(type default)
 		)
 		(uuid "7fec258d-78c0-4da6-b8ba-b00d5f94b0d4")
+	)
+	(wire
+		(pts
+			(xy 39.37 60.96) (xy 39.37 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8073bf68-a1ae-4b00-9fd5-ebc45f13be0e")
 	)
 	(wire
 		(pts
@@ -6451,6 +6649,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 66.04) (xy 231.14 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fe19fe1-3310-4361-a9ba-1628222f5348")
+	)
+	(wire
+		(pts
 			(xy 45.72 71.12) (xy 45.72 72.39)
 		)
 		(stroke
@@ -6508,6 +6716,16 @@
 			(type default)
 		)
 		(uuid "a613f22e-3d50-4623-89a3-3b17fc0541d4")
+	)
+	(wire
+		(pts
+			(xy 39.37 62.23) (xy 45.72 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a718c598-32cd-4106-a5b7-7ff3c29f1fec")
 	)
 	(wire
 		(pts
@@ -6611,7 +6829,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 91.44) (xy 54.61 92.71)
+			(xy 54.61 88.9) (xy 54.61 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6941,6 +7159,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 134.62) (xy 38.1 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e286456c-9ed1-4c43-b491-1921cb011526")
+	)
+	(wire
+		(pts
 			(xy 232.41 100.33) (xy 232.41 101.6)
 		)
 		(stroke
@@ -7206,7 +7434,7 @@
 	)
 	(text "STM32WB 55 MCU\n\n"
 		(exclude_from_sim no)
-		(at 163.83 66.04 0)
+		(at 158.75 68.58 0)
 		(effects
 			(font
 				(size 2 2)
@@ -7438,7 +7666,7 @@
 		(uuid "ac5a1192-c1d7-4600-95f7-5270184712ab")
 	)
 	(label "SWD_NRST"
-		(at 182.88 72.39 180)
+		(at 231.14 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7572,7 +7800,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 100.33 88.138 90)
 			(effects
 				(font
@@ -7591,6 +7819,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 100.33 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 100.33 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 100.33 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 100.33 86.36 0)
 			(effects
 				(font
@@ -7642,7 +7897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 46.6852 71.12 0)
 			(effects
 				(font
@@ -7661,6 +7916,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 45.72 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 45.72 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 45.72 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 45.72 67.31 0)
 			(effects
 				(font
@@ -7837,7 +8119,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0p8"
 			(at 224.79 106.6799 0)
 			(effects
 				(font
@@ -7846,7 +8128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 221.9452 109.22 0)
 			(effects
 				(font
@@ -7873,6 +8155,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer " ""
+			(at 220.98 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 220.98 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 220.98 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dcdb67d6-d460-4508-a5ac-0f1b1103146e")
 		)
@@ -7890,7 +8199,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 54.61 91.44 0)
+		(at 54.61 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7898,7 +8207,7 @@
 		(dnp no)
 		(uuid "08d2ec52-2473-46ef-9031-21a018966d38")
 		(property "Reference" "#PWR04"
-			(at 54.61 95.25 0)
+			(at 54.61 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7907,7 +8216,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 54.61 87.63 0)
+			(at 54.61 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7915,7 +8224,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 91.44 0)
+			(at 54.61 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,7 +8233,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 91.44 0)
+			(at 54.61 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7933,7 +8242,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 54.61 91.44 0)
+			(at 54.61 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7981,7 +8290,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 39.0652 44.45 0)
 			(effects
 				(font
@@ -8000,6 +8309,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 38.1 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 38.1 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 38.1 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 38.1 40.64 0)
 			(effects
 				(font
@@ -8183,7 +8519,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 233.68 130.048 90)
 			(effects
 				(font
@@ -8202,6 +8538,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 233.68 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 233.68 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 233.68 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 233.68 128.27 0)
 			(effects
 				(font
@@ -8243,7 +8606,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "2n7"
 			(at 227.33 97.79 90)
 			(effects
 				(font
@@ -8251,7 +8614,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 227.33 100.33 0)
 			(effects
 				(font
@@ -8270,6 +8633,33 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 227.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 227.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 227.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 227.33 100.33 0)
 			(effects
 				(font
@@ -8341,6 +8731,33 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 256KB RAM, 64 MHz, 1.71-3.6V, 30 GPIO, UFQFPN48"
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 148.59 113.03 0)
 			(effects
 				(font
@@ -8558,6 +8975,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer " ""
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "1dbc2b36-a115-4b0d-abcd-e6b92ff0c981")
 		)
@@ -8675,7 +9119,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STM32withBle_PCBFootprints:DLF162500LT-5028A1"
 			(at 248.92 100.33 0)
 			(effects
 				(font
@@ -8694,6 +9138,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 248.92 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 248.92 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 248.92 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 248.92 100.33 0)
 			(effects
 				(font
@@ -8807,7 +9278,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 115.57 68.5799 0)
 			(effects
 				(font
@@ -8816,7 +9287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 112.7252 71.12 0)
 			(effects
 				(font
@@ -8835,6 +9306,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 111.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 111.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 111.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 111.76 67.31 0)
 			(effects
 				(font
@@ -8886,7 +9384,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 60.452 123.19 90)
 			(effects
 				(font
@@ -8905,6 +9403,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 62.23 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 62.23 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 62.23 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 62.23 123.19 0)
 			(effects
 				(font
@@ -8996,6 +9521,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 214.63 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48e36467-355c-428d-85b9-74c05bc58bc6")
+		(property "Reference" "#PWR026"
+			(at 214.63 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ba72a6a-10e2-4d0b-9d1a-59f3f34d5b98")
+		)
+		(instances
+			(project "STM32withBle"
+				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 116.84 50.8 0)
 		(unit 1)
@@ -9023,7 +9615,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 117.8052 54.61 0)
 			(effects
 				(font
@@ -9042,6 +9634,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 116.84 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 116.84 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 116.84 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 116.84 50.8 0)
 			(effects
 				(font
@@ -9084,7 +9703,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 76.2 68.5799 0)
 			(effects
 				(font
@@ -9093,7 +9712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 73.3552 71.12 0)
 			(effects
 				(font
@@ -9112,6 +9731,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 72.39 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 72.39 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 72.39 67.31 0)
 			(effects
 				(font
@@ -9355,7 +10001,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 129.54 68.5799 0)
 			(effects
 				(font
@@ -9364,7 +10010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 126.6952 71.12 0)
 			(effects
 				(font
@@ -9383,6 +10029,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 125.73 67.31 0)
 			(effects
 				(font
@@ -9492,7 +10165,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 90.17 68.5799 0)
 			(effects
 				(font
@@ -9501,7 +10174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 87.3252 71.12 0)
 			(effects
 				(font
@@ -9520,6 +10193,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 86.36 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 86.36 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 86.36 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 86.36 67.31 0)
 			(effects
 				(font
@@ -9568,7 +10268,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 205.74 113.03 0)
 			(effects
 				(font
@@ -9587,6 +10287,33 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 205.74 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 205.74 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 205.74 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 205.74 113.03 0)
 			(effects
 				(font
@@ -9617,6 +10344,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 41.91 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f639bed-c1a7-416e-8210-54d196430b74")
+		(property "Reference" "#FLG02"
+			(at 41.91 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 41.91 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9dcdda7-621f-4e21-8f5a-78ae252167d6")
+		)
+		(instances
+			(project "STM32withBle"
+				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 100.33 88.9 90)
 		(unit 1)
@@ -9641,7 +10435,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 100.33 90.678 90)
 			(effects
 				(font
@@ -9668,6 +10462,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer " ""
+			(at 100.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 100.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 100.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "05a11f7d-d7ca-4119-bee7-4208cf2104e5")
 		)
@@ -9678,6 +10499,73 @@
 			(project "STM32withBle"
 				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73c6362f-3e86-479b-b0ca-750b652c0f13")
+		(property "Reference" "#PWR025"
+			(at 66.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b9a5089-331c-43dd-8e3d-084dc986d021")
+		)
+		(instances
+			(project "STM32withBle"
+				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9708,7 +10596,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 105.41 97.028 90)
 			(effects
 				(font
@@ -9727,6 +10615,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 105.41 95.25 0)
 			(effects
 				(font
@@ -9755,7 +10670,7 @@
 		(at 87.63 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7b0ae7d2-9589-4b28-9dbf-cc5839cf9f3c")
@@ -9804,6 +10719,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer " ""
+			(at 87.63 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 87.63 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 87.63 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d4e5447b-6d01-43a1-a541-91f1d68e3c16")
 		)
@@ -9826,6 +10768,103 @@
 			(project ""
 				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 214.63 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d012f57-c141-40bb-8eab-c04c2d4b8e3d")
+		(property "Reference" "C19"
+			(at 218.44 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 218.44 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 215.5952 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d254679-1a62-4a79-a9ee-e1644de6c866")
+		)
+		(pin "2"
+			(uuid "401dd990-ec72-46f5-91d1-cb9aec35a11e")
+		)
+		(instances
+			(project "STM32withBle"
+				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -9859,7 +10898,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 219.4052 137.16 0)
 			(effects
 				(font
@@ -9878,6 +10917,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 218.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 218.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 218.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 218.44 133.35 0)
 			(effects
 				(font
@@ -9909,7 +10975,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "85cbac82-ed91-45a9-90e7-c19f6bcc2f93")
 		(property "Reference" "L2"
 			(at 190.5 77.47 90)
@@ -9919,7 +10984,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "10u"
 			(at 190.5 80.01 90)
 			(effects
 				(font
@@ -9927,7 +10992,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 190.5 82.55 0)
 			(effects
 				(font
@@ -9946,6 +11011,33 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 190.5 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 190.5 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 190.5 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 190.5 82.55 0)
 			(effects
 				(font
@@ -10060,7 +11152,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
 			(at 181.61 142.24 0)
 			(effects
 				(font
@@ -10079,6 +11171,33 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 181.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 181.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 181.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 181.61 142.24 0)
 			(effects
 				(font
@@ -10128,7 +11247,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Sr_42820-42XX_1x04_P10.00mm_Horizontal"
 			(at 78.74 86.36 0)
 			(effects
 				(font
@@ -10147,6 +11266,33 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 78.74 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 78.74 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 78.74 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 78.74 86.36 0)
 			(effects
 				(font
@@ -10204,7 +11350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical"
 			(at 265.43 100.33 0)
 			(effects
 				(font
@@ -10231,6 +11377,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer " ""
+			(at 265.43 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 265.43 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 265.43 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1960c1a0-d828-4ebd-b46d-93f77dee4e4a")
 		)
@@ -10241,6 +11414,73 @@
 			(project ""
 				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 39.37 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fbc862c-7498-4aff-95e2-34ff75046346")
+		(property "Reference" "#FLG01"
+			(at 39.37 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 39.37 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 39.37 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2b763a9-5a53-46df-b7b4-cb0eb63dda66")
+		)
+		(instances
+			(project ""
+				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -10265,7 +11505,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 157.48 52.0699 0)
 			(effects
 				(font
@@ -10274,7 +11514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 154.6352 54.61 0)
 			(effects
 				(font
@@ -10293,6 +11533,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 153.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 153.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 153.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 153.67 50.8 0)
 			(effects
 				(font
@@ -10409,7 +11676,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 116.84 95.25 0)
 			(effects
 				(font
@@ -10428,6 +11695,33 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 116.84 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 116.84 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 116.84 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 116.84 95.25 0)
 			(effects
 				(font
@@ -10479,7 +11773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 203.962 133.35 90)
 			(effects
 				(font
@@ -10498,6 +11792,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 205.74 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 205.74 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 205.74 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 205.74 133.35 0)
 			(effects
 				(font
@@ -10549,7 +11870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 75.8952 44.45 0)
 			(effects
 				(font
@@ -10568,6 +11889,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 74.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 74.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 74.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 74.93 40.64 0)
 			(effects
 				(font
@@ -10610,7 +11958,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "10p"
 			(at 193.04 152.3999 0)
 			(effects
 				(font
@@ -10619,7 +11967,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 190.1952 154.94 0)
 			(effects
 				(font
@@ -10646,6 +11994,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer " ""
+			(at 189.23 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 189.23 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
+			(at 189.23 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91be4fd6-2d4c-46fa-af4f-6232489d6999")
 		)
@@ -10656,6 +12031,73 @@
 			(project "STM32withBle"
 				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abcd94f2-f65e-418f-9145-a851d6d94b2a")
+		(property "Reference" "#FLG03"
+			(at 66.04 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e0257c2-6cef-4274-962b-c9e302fb27c9")
+		)
+		(instances
+			(project "STM32withBle"
+				(path "/f237827b-15f1-4fb7-970e-e4c7ed271bcc"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -10680,7 +12122,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 62.23 68.5799 0)
 			(effects
 				(font
@@ -10689,7 +12131,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 59.3852 71.12 0)
 			(effects
 				(font
@@ -10708,6 +12150,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 58.42 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 58.42 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 58.42 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 58.42 67.31 0)
 			(effects
 				(font
@@ -10757,7 +12226,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 38.1 107.95 0)
 			(effects
 				(font
@@ -10776,6 +12245,33 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 34.29 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 34.29 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 34.29 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 34.29 107.95 0)
 			(effects
 				(font
@@ -11196,7 +12692,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 132.08 52.0699 0)
 			(effects
 				(font
@@ -11205,7 +12701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 129.2352 54.61 0)
 			(effects
 				(font
@@ -11224,6 +12720,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 128.27 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 128.27 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 128.27 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 128.27 50.8 0)
 			(effects
 				(font
@@ -11266,7 +12789,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 102.87 68.5799 0)
 			(effects
 				(font
@@ -11275,7 +12798,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 100.0252 71.12 0)
 			(effects
 				(font
@@ -11294,6 +12817,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 99.06 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 99.06 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 99.06 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 99.06 67.31 0)
 			(effects
 				(font
@@ -11335,7 +12885,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "10n"
 			(at 177.8 80.01 90)
 			(effects
 				(font
@@ -11343,7 +12893,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 177.8 82.55 0)
 			(effects
 				(font
@@ -11362,6 +12912,33 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 177.8 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 177.8 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 177.8 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 177.8 82.55 0)
 			(effects
 				(font
@@ -11403,7 +12980,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "10p"
 			(at 177.8 152.4 0)
 			(effects
 				(font
@@ -11412,7 +12989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 174.9552 154.94 0)
 			(effects
 				(font
@@ -11431,6 +13008,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 173.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 173.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 173.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 173.99 151.13 0)
 			(effects
 				(font
@@ -11482,7 +13086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 52.832 123.19 90)
 			(effects
 				(font
@@ -11501,6 +13105,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 54.61 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 54.61 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 54.61 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 54.61 123.19 0)
 			(effects
 				(font
@@ -11543,7 +13174,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0p8"
 			(at 236.22 106.6799 0)
 			(effects
 				(font
@@ -11552,7 +13183,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 233.3752 109.22 0)
 			(effects
 				(font
@@ -11571,6 +13202,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 232.41 105.41 0)
 			(effects
 				(font
@@ -11622,7 +13280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 205.4352 91.44 0)
 			(effects
 				(font
@@ -11641,6 +13299,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 204.47 87.63 0)
 			(effects
 				(font
@@ -11714,6 +13399,33 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+			(at 66.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 66.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 66.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 66.04 107.95 0)
 			(effects
 				(font
@@ -12041,7 +13753,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
 			(at 245.11 123.19 0)
 			(effects
 				(font
@@ -12060,6 +13772,33 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 245.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer " ""
+			(at 245.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 245.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "distributor Link" ""
 			(at 245.11 128.27 0)
 			(effects
 				(font
